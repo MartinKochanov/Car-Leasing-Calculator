@@ -1,0 +1,80 @@
+/* Fix the calculator in the center of the screen*/
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border: 2px solid #EAEAEA;
+    border-radius: 4px;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center the headings*/
+.heading {
+    text-align: center;
+    padding: 0 2em;
+}
+
+/* Put space between the fields*/
+.leasing-options {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.options-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+.leasing-details .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.middle-line {
+    display: none;
+    border: 1px solid #D0D0D0;
+}
+
+
+/* Responsive */
+
+/* Large and extra large devices (laptops/desktops/large desktops) */
+@media (min-width: 769px) {
+
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .leasing-details .details {
+        flex-direction: initial;
+        gap: 2.5em;
+    }
+
+    .leasing-options {
+        flex-direction: initial;
+    }
+
+    .middle-line {
+        display: block;
+    }
+
+    
+
+    .heading {
+        margin-bottom: 1em;
+        padding: 0 3em;
+    }
+}

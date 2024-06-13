@@ -17,36 +17,41 @@
 
         <div class="leasing-options">
 
-            <div class="car-type-wrapper">
-                <label for="car-type">Car Type:</label>
-                <select id="car-type">
-                    <option value="Brand New" selected>Brand New</option>
-                    <option value="Used">Used</option>
-                </select>
+            <div class="options-group">
+                <div class="car-type-wrapper">
+                    <label for="car-type">Car Type:</label>
+                    <select id="car-type">
+                        <option value="Brand New" selected>Brand New</option>
+                        <option value="Used">Used</option>
+                    </select>
+                </div>
+
+                <div class="car-value-wrapper">
+                    <label for="car-value">Car Value (&euro;10&comma;000 - &euro;200&comma;000)</label>
+                    <input id="car-value" type="text">
+                    <input type="range">
+                </div>
             </div>
 
-            <div class="car-value-wrapper">
-                <label for="car-value">Car Value (&euro;10&comma;000 - &euro;200&comma;000)</label>
-                <input id="car-value" type="text">
-                <input type="range">
-            </div>
+            <div class="options-group">
 
-            <div class="lease-period-wrapper">
-                <label for="lease-period">Lease Period (months)</label>
-                <select id="lease-period">
-                    <option value="12" selected>12</option>
-                    <option value="24" selected>24</option>
-                    <option value="36" selected>36</option>
-                    <option value="48" selected>48</option>
-                    <option value="60" selected>60</option>
-                </select>
-            </div>
+                <div class="lease-period-wrapper">
+                    <label for="lease-period">Lease Period (months)</label>
+                    <select id="lease-period">
+                        <option value="12" selected>12</option>
+                        <option value="24" selected>24</option>
+                        <option value="36" selected>36</option>
+                        <option value="48" selected>48</option>
+                        <option value="60" selected>60</option>
+                    </select>
+                </div>
 
 
-            <div class="car-value-wrapper">
-                <label for="car-value">Down Payment (10&percnt; - 50&percnt;)</label>
-                <input id="car-value" type="text">
-                <input type="range">
+                <div class="car-value-wrapper">
+                    <label for="car-value">Down Payment (10&percnt; - 50&percnt;)</label>
+                    <input id="car-value" type="text">
+                    <input type="range">
+                </div>
             </div>
 
         </div>
@@ -60,6 +65,10 @@
                 <div>
                     <p>Total Leasing Cost: &euro;<span></span></p>
                     <p>Down Payment: &euro;<span></span></p>
+                </div>
+
+                <div class="middle-line">
+
                 </div>
 
                 <div>

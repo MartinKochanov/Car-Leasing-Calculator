@@ -1,0 +1,41 @@
+/* reset.css */
+
+/* Box sizing border-box for all elements */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* inputs and select*/
+input,
+select,
+label {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+}
+
+input,
+select {
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    padding: 0.4em 0.8em;
+}
+
+
+input[type='range'] {
+    margin-top: 2em;
+}
+
+/* Responsive */
+
+/* Large and extra large devices (laptops/desktops/large desktops) */
+@media (min-width: 769px) {
+
+    input,
+    select {
+        padding: 1em;
+    }
+}

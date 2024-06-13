@@ -1,0 +1,70 @@
+/* typography.css */
+
+
+/* Body text */
+body {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    /* Equivalent to 24px with 12px body font size */
+}
+
+h2 {
+    font-size: 1.75em;
+    /* Equivalent to 21px with 12px body font size */
+}
+
+h3 {
+    font-size: 1.5em;
+    /* Equivalent to 18px with 12px body font size */
+}
+
+
+/* labels */
+
+label {
+    font-weight: 500;
+}
+
+
+/* Responsive */
+
+
+/* Medium device (tablets)*/
+@media (min-width: 577px) and (max-width:768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 769px) and (max-width:992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* extra Large devices (large desktops) */
+@media (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+}

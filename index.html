@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Car Leasing Calculator</title>
 </head>
 
@@ -28,8 +28,8 @@
 
                 <div class="car-value-wrapper">
                     <label for="car-value">Car Value (&euro;10&comma;000 - &euro;200&comma;000)</label>
-                    <input id="car-value" type="text">
-                    <input type="range">
+                    <input id="car-value" type="text" value="100000">
+                    <input id="car-value-range" type="range" min="10000" max="200000">
                 </div>
             </div>
 
@@ -39,18 +39,18 @@
                     <label for="lease-period">Lease Period (months)</label>
                     <select id="lease-period">
                         <option value="12" selected>12</option>
-                        <option value="24" selected>24</option>
-                        <option value="36" selected>36</option>
-                        <option value="48" selected>48</option>
-                        <option value="60" selected>60</option>
+                        <option value="24">24</option>
+                        <option value="36">36</option>
+                        <option value="48">48</option>
+                        <option value="60">60</option>
                     </select>
                 </div>
 
 
                 <div class="car-value-wrapper">
                     <label for="car-value">Down Payment (10&percnt; - 50&percnt;)</label>
-                    <input id="car-value" type="text">
-                    <input type="range">
+                    <input id="down-payment" type="text" value="25">
+                    <input id="down-payment-range" type="range" min="10" max="50" step="5">
                 </div>
             </div>
 
@@ -63,8 +63,8 @@
 
             <div class="details">
                 <div>
-                    <p>Total Leasing Cost: &euro;<span></span></p>
-                    <p>Down Payment: &euro;<span></span></p>
+                    <p>Total Leasing Cost: &euro;<span id="total-cost"></span></p>
+                    <p>Down Payment: &euro;<span id="down-payment-value"></span></p>
                 </div>
 
                 <div class="middle-line">
@@ -72,8 +72,8 @@
                 </div>
 
                 <div>
-                    <p>Monthly Installment: &euro;<span></span></p>
-                    <p>Interest Rate: <span></span>&percnt;</p>
+                    <p>Monthly Installment: &euro;<span id="monthly-installment"></span></p>
+                    <p>Interest Rate: <span id="interest-rate"></span>&percnt;</p>
                 </div>
 
             </div>
@@ -82,5 +82,6 @@
     </div>
 
 </body>
+<script src="/script/index.js"></script>
 
 </html>

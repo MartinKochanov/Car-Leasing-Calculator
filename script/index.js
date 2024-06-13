@@ -15,7 +15,6 @@ const monthlyInstallment = document.getElementById('monthly-installment');
 const interestRateDisplay = document.getElementById('interest-rate');
 
 
-
 function syncInputWithRange(inputElement, rangeElement, min, max) {
 
 

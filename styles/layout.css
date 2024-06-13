@@ -32,10 +32,10 @@ body {
 }
 
 .options-group {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
 .leasing-details .details {
     display: flex;
@@ -71,8 +71,6 @@ body {
     .middle-line {
         display: block;
     }
-
-    
 
     .heading {
         margin-bottom: 1em;

@@ -6,7 +6,7 @@ reset.css: This file establishes baseline styles to reset default browser styles
 
 typography.css: Here, I set the foundational typography rules, including the base font family, sizes, and other typographical elements.
 
-layout.css: This file focuses on structuring the visual layout of the page, ensuring elements are properly positioned and spaced.
+layout.css: This file focuses on structuring the visual layout of the page, ensuring elements are properly positioned and spaced. I`m using flexdbox to achive the result
 
 style.css: This serves as a comprehensive stylesheet where all previously defined styles are consolidated and applied to elements throughout the project.
 

@@ -1,20 +1,27 @@
 
 // Input fields
-const carType = document.getElementById('car-type');
-const carValue = document.getElementById('car-value');
-const carValueRange = document.getElementById('car-value-range');
-const leasePeriod = document.getElementById('lease-period');
-const downPayment = document.getElementById('down-payment');
-const downPaymentRange = document.getElementById('down-payment-range');
+const carType = document.getElementById('car-type');            // Input field for selecting car type (Brand New or Used)
+const carValue = document.getElementById('car-value');          // Input field for entering car value
+const carValueRange = document.getElementById('car-value-range');// Range input synced with car value input
+const leasePeriod = document.getElementById('lease-period');     // Input field for selecting lease period in months
+const downPayment = document.getElementById('down-payment');     // Input field for entering down payment percentage
+const downPaymentRange = document.getElementById('down-payment-range');  // Range input synced with down payment input
 
 
 // Output fields
-const totalCost = document.getElementById('total-cost');
-const downPaymentValue = document.getElementById('down-payment-value');
-const monthlyInstallment = document.getElementById('monthly-installment');
-const interestRateDisplay = document.getElementById('interest-rate');
+const totalCost = document.getElementById('total-cost');   // Output field to display total leasing cost
+const downPaymentValue = document.getElementById('down-payment-value');   // Output field to display calculated down payment amount
+const monthlyInstallment = document.getElementById('monthly-installment');   // Output field to display monthly installment amount
+const interestRateDisplay = document.getElementById('interest-rate');   // Output field to display interest rate
 
 
+/**
+ * Synchronizes an input field with a range input and triggers the calculation function.
+ * @param {HTMLInputElement} inputElement - Input field element to sync with range.
+ * @param {HTMLInputElement} rangeElement - Range input element to sync with input field.
+ * @param {number} min - Minimum allowed value for synchronization.
+ * @param {number} max - Maximum allowed value for synchronization.
+ */
 function syncInputWithRange(inputElement, rangeElement, min, max) {
 
 
@@ -36,6 +43,10 @@ function syncInputWithRange(inputElement, rangeElement, min, max) {
     })
 }
 
+
+/**
+ * Validates the input fields related to car leasing and displays error messages if validation fails.
+ */
 function validateInputs() {
 
     let errorMessages = [];
@@ -77,6 +88,11 @@ function validateInputs() {
 
 }
 
+
+/**
+ * Calculates the total leasing cost, monthly installment, down payment amount,
+ * and updates the respective output fields.
+ */
 function calculate() {
     validateInputs();
     const carValueAmount = parseFloat(carValue.value.replace(/,/g, ''));
@@ -97,11 +113,13 @@ function calculate() {
     interestRateDisplay.textContent = interesRate;
 }
 
+// Initial synchronization and event listeners setup
 syncInputWithRange(carValue, carValueRange, 10000, 200000);
 syncInputWithRange(downPayment, downPaymentRange, 10, 50);
 
 carType.addEventListener('change', calculate);
 leasePeriod.addEventListener('change', calculate);
 
+// Calculate initial values on page load
 calculate();
 

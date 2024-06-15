@@ -1,12 +1,14 @@
 Car Leasing Calculator Solution
 
-Initially, I create an .html file to construct the entire page framework. Following this,
-I develop a straightforward reset.css file that contains foundational styles essential for my elements.
-Additionally, I establish a typography.css file to define my primary font and font sizes, and a layout.css 
-file where I organize the visual structure of my page. Finally, I consolidate all these elements
-into a style.css file, integrating and harmonizing the overall design of the solution.
+To create a cohesive Car Leasing Calculator Solution, I began by constructing an HTML file to define the entire page structure. Subsequently, I developed essential CSS files:
 
-In addition I implement a JavaScript file. This JavaScript file houses all the necessary
-functions to ensure the functional integrity of the page. These functions are meticulously
-crafted to enable the interactive and dynamic features essential for the Car Leasing Calculator Solution.
+reset.css: This file establishes baseline styles to reset default browser styles, ensuring consistency across different browsers.
+
+typography.css: Here, I set the foundational typography rules, including the base font family, sizes, and other typographical elements.
+
+layout.css: This file focuses on structuring the visual layout of the page, ensuring elements are properly positioned and spaced.
+
+style.css: This serves as a comprehensive stylesheet where all previously defined styles are consolidated and applied to elements throughout the project.
+
+Additionally, I implemented a JavaScript file where I crafted essential functions to enable interactive features and ensure the functional integrity of the Car Leasing Calculator Solution.
 
